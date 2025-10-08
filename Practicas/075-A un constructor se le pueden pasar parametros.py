@@ -1,0 +1,13 @@
+class Gato()
+	def __init__(self): 	# El constructor se ejecuta si o si.
+		self.edad = 0
+		
+	def maulla(self):
+		return 'El gato está maullando'
+		
+gato1 = Gato()
+print(gato1.edad)
+self.edad = 5
+print(gato.edad)
+
+print(gato1.maulla())
