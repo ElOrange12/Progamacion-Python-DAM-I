@@ -98,7 +98,7 @@ A continuación se muestra un ejemplo de código del ejercicio resuelto:
 	'''
 		Factura con IVA descuento
 		v1.0 Daniel Oliveira Vidal
-		Este programa imprime por pantalla tickets aplicando el IVA y un descuento a precios brutos mayores o iguales a 50€.
+		Este programa imprime por pantalla tickets aplicando el IVA y un descuento a precios mayores o iguales a 50€.
 	'''
 
 	#################### Pedimos datos iniciales ####################
