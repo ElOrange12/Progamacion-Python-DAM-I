@@ -1,4 +1,11 @@
-<!doctype html>
+from flask import Flask
+
+aplicacion = Flask(__name__)
+
+@aplicacion.route('/')
+def raiz():
+	return ''' 
+	<!doctype html>
 <html lang="es">
 	<head>
 		<title>ElOrangeBLOG</title>
@@ -23,4 +30,7 @@
 		<footer>(c)2025 Daniel Oliveira Vidal</footer>
 	</body>
 </html>
-		
+'''
+
+if __name__ == '__main__':
+	aplicacion.run(debug = True)
