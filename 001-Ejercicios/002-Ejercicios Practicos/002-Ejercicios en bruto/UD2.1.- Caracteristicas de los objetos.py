@@ -12,7 +12,6 @@ class EquipoFutbol():
 		self.jugadores = []
 		
 pj1 = (2, 1)
-
 pj2 = (4, 3)
 
 distancia_jugadores = sqrt((pj1[1] - pj1[0])**2 + (pj2[1] - pj2[0])**2)
