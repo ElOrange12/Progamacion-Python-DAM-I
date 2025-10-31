@@ -9,7 +9,6 @@ intentos = 6
 
 numero = random.randint(1, 50)
 respuesta = ''
-print(numero)
 
 print('Trata de adivinar el número que estoy pensando.')
 print('Solo tendras 6 intentos.')
