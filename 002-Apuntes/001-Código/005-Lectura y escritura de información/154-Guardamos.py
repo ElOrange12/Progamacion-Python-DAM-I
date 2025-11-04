@@ -14,7 +14,7 @@ clientes = []
 ########## Ojo que igual no existe el archivo ##########
 try:
 	archivo = open('clientes.bin', 'rb')
-	clientes = pickle.load('clientes.dat')
+	clientes = pickle.load(archivo)
 	archivo.close()
 	
 except:

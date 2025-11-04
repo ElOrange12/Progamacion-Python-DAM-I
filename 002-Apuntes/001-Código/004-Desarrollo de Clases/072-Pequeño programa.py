@@ -30,6 +30,6 @@ if opcion == 1:
 	nombrecliente = input('Introduce el nombre del cliente: ') # Tomo el dato
 	nuevocliente.setNombreCompleto(nombrecliente) # Uso el metodo set para meter el dato en el objeto
 	emailcliente = input('Introduce el email del cliente: ') # Tomo el dato
-	nuevocliente.setEmail(emailcliente) # Uso el metodo ser para meter el dato en el objeto
+	nuevocliente.setEmail(emailcliente) # Uso el metodo set para meter el dato en el objeto
 elif opcion == 2: 
 	print('Saco el listado de cliente')
