@@ -17,7 +17,7 @@ while True:
 		lista_de_la_compra.append({'nombre':nombre, 'cantidad':cantidad})
 		archivo = open('lista.json', 'w')	# Abro un archivo 
 		json.dumps(lista_de_la_compra, archivo)		# Guardo en json
-		archivo.close()
+		archivo.close()		# Cierro el archivo
 		
 	elif opcion == 2:
 		for producto in lista_de_la_compra:
