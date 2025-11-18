@@ -20,3 +20,7 @@ while True:
 		pickle.dump(menu, archivo)
 		archivo.close()
 		print('Información guardad correctamente')
+	elif opcion == 4:
+		archivo = open('datos.txt','rb')
+		menu = pickle.load(archivo)
+		archivo.close()
