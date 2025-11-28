@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<style>
-			.npc{width:50px; height:50px; background:red; border-radius:50px; position:absolute;}
+			.npc{width:50px; height:50px; background:darkorange; border-radius:50px; position:absolute;}
 		</style>
 	</head>
 	<body>
@@ -11,27 +11,38 @@
 		<script>
 			// Cojo el contenedor
 			let escenario = document.querySelector('main');
-			// Me conecto a un api, pido datos, los convierto a json, y los lanzo
-			fetch("http://127.0.0.1:5000/api")
-			.then(function(respuesta){return respuesta.json();})
-			.then(function(datos){
-				// Para cada npc:
-				datos.forEach(function(npc){
-					// Creo un nuevo elemento en HTML
-					let personaje = document.createElement('div');
-					// Le añado una clase css
-					personaje.classList.add('npc');
-					// La posición x en HTML será la posición x que viene de Python
-					personaje.style.left = npc.posx+'px'
-					// La posición y en HTML será la posición y que viene de Python
-					personaje.style.top = npc.posy+'px'
-					// Pongo la anchura sobre el dato que llega de Python
-					personaje.style.width = npc.radio+"px"
-					// Pongo la altura sobre el dato que llega de Python
-					personaje.style.height = npc.radio+"px"
-					escenario.appendChild(personaje)
+			let temporizador = setTimeout('bucle()', 1000)
+			function bucle(){				
+				// Me conecto a un api, pido datos, los convierto a json, y los lanzo
+				fetch("http://127.0.0.1:5000/api")
+				.then(function(respuesta){return respuesta.json();})
+				.then(function(datos){
+					console.log(datos)
+					// Vacio el escenario
+					escenario.innerHTML = ''
+					// Para cada npc:
+					datos.forEach(function(npc){
+						// Creo un nuevo elemento en HTML
+						let personaje = document.createElement('div');
+						// Le añado una clase css
+						personaje.classList.add('npc');
+						// La posición x en HTML será la posición x que viene de Python
+						personaje.style.left = npc.posx+'px'
+						// La posición y en HTML será la posición y que viene de Python
+						personaje.style.top = npc.posy+'px'
+						// Pongo la anchura sobre el dato que llega de Python
+						personaje.style.width = npc.radio+"px"
+						// Pongo la altura sobre el dato que llega de Python
+						personaje.style.height = npc.radio+"px"
+						escenario.appendChild(personaje)
+					})
 				})
-			})
+				// Primero borro el temporizador anterior
+				clearTimeout(temporizador)
+				
+				// Y ahora vuelvo a 
+				temporizador = setTimeout('bucle()', 100)
+			}
 		</script>
 	</body>
 </html>
