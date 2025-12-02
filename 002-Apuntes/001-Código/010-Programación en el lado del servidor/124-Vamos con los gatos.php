@@ -1,11 +1,6 @@
 <?php
 	
-	class Gato{
-		function __construct($color, $edad){
-			$this->color = $color;
-			$this->edad = $edad;
-		}
-	}
+	class Gato{.
 	
 	$gato1 = new Gato('Naranja', 1);
 	$gato2 = new Gato('Blanco', 2);
