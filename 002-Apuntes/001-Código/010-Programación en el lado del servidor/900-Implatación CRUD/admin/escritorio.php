@@ -1,4 +1,4 @@
-<!-- http://localhost/GitHub/Base-de-Datos-DAM-I/002-Apuntes/008-Proyectos/003-Panel%20de%20control/aplicaci%C3%B3n/admin/escritorio.php -->
+<!-- http://localhost/GitHub/Progamacion-DAM-I/002-Apuntes/001-C%C3%B3digo/010-Programaci%C3%B3n%20en%20el%20lado%20del%20servidor/900-Implataci%C3%B3n%20CRUD/admin/escritorio.php -->
 
 <!doctype html>
 <html lang="es">
@@ -13,24 +13,7 @@
 			<button>Autores</button>
 		</nav>
 		<main>
-			<table>
-				<thead>
-					<tr>
-						<th>Titulo</th><th>Texto</th><th>Fecha</th><th>Autor</th><th>Categoria</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php
-						for($i = 0;$i<20;$i++){
-							echo '
-							<tr>
-							  <td>Titulo</td><td>Texto</td><td>Fecha</td><td>Autor</td><td>Categoria</td>
-							</tr>
-						  	';
-						}
-					?>
-				</tbody>
-			</table>
+			<?php include "inc/read/leer.php"; ?>
 		</main>
 	</body>
 </html>
