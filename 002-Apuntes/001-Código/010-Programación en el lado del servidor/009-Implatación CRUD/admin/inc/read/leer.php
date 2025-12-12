@@ -18,6 +18,8 @@
 				echo "<td>".$fila['fecha_publicacion']."</td>";
 				echo "<td>".$fila['autor_id']."</td>";
 				echo "<td>".$fila['contenido']."</td>";
+				echo "<td><a href='?accion=editar&id=".$fila['id']."' class='editar' title='Editar una noticia'>✏️</a></td>";
+				echo "<td><a href='?accion=eliminar&id=".$fila['id']."' class='eliminar' title='Eliminar una noticia'>❌️</a></td>";
 			echo "</tr>";
 		}
 
