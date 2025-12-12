@@ -1,0 +1,168 @@
+{
+  "formas": [
+    {
+      "id": "forma-1",
+      "tipo": "entity",
+      "left": "720.399px",
+      "top": "484.322px",
+      "width": "",
+      "height": "",
+      "entityName": "Producto",
+      "properties": [
+        {
+          "id": "prop-1",
+          "name": "id"
+        },
+        {
+          "id": "prop-2",
+          "name": "nombre_producto"
+        },
+        {
+          "id": "prop-3",
+          "name": "descripcion"
+        },
+        {
+          "id": "prop-4",
+          "name": "precio"
+        },
+        {
+          "id": "prop-5",
+          "name": "stock"
+        },
+        {
+          "id": "prop-6",
+          "name": "imagen"
+        }
+      ]
+    },
+    {
+      "id": "forma-2",
+      "tipo": "entity",
+      "left": "500.172px",
+      "top": "267.45px",
+      "width": "",
+      "height": "",
+      "entityName": "Cliente",
+      "properties": [
+        {
+          "id": "prop-7",
+          "name": "id"
+        },
+        {
+          "id": "prop-8",
+          "name": "nombre_cliente"
+        },
+        {
+          "id": "prop-9",
+          "name": "apellidos"
+        },
+        {
+          "id": "prop-10",
+          "name": "email"
+        },
+        {
+          "id": "prop-11",
+          "name": "direccion"
+        },
+        {
+          "id": "prop-12",
+          "name": "telefono"
+        }
+      ]
+    },
+    {
+      "id": "forma-8",
+      "tipo": "entity",
+      "left": "721.102px",
+      "top": "269.024px",
+      "width": "",
+      "height": "",
+      "entityName": "Pedido",
+      "properties": [
+        {
+          "id": "prop-18",
+          "name": "id"
+        },
+        {
+          "id": "prop-19",
+          "name": "fecha"
+        },
+        {
+          "id": "prop-20",
+          "name": "cliente_id"
+        }
+      ]
+    },
+    {
+      "id": "forma-9",
+      "tipo": "entity",
+      "left": "937.703px",
+      "top": "344.976px",
+      "width": "",
+      "height": "",
+      "entityName": "LineasPedido",
+      "properties": [
+        {
+          "id": "prop-21",
+          "name": "id"
+        },
+        {
+          "id": "prop-22",
+          "name": "pedido_id"
+        },
+        {
+          "id": "prop-23",
+          "name": "cantidad"
+        },
+        {
+          "id": "prop-24",
+          "name": "producto_id"
+        }
+      ]
+    }
+  ],
+  "flechas": [
+    {
+      "desde": {
+        "shapeId": "forma-8",
+        "propId": "prop-20",
+        "side": "left"
+      },
+      "hasta": {
+        "shapeId": "forma-2",
+        "propId": "prop-7",
+        "side": "right"
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-9",
+        "propId": "prop-24",
+        "side": "left"
+      },
+      "hasta": {
+        "shapeId": "forma-1",
+        "propId": "prop-1",
+        "side": "right"
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-9",
+        "propId": "prop-22",
+        "side": "left"
+      },
+      "hasta": {
+        "shapeId": "forma-8",
+        "propId": "prop-18",
+        "side": "right"
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="677.5312943892045" height="495.8749667080967" viewBox="0 0 677.5312943892045 495.8749667080967">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<rect class="shape-entity" x="260.21872780539775" y="256.87505548650574" width="160.2187832919034" height="198.9999112215909" />
+<line x1="260.21872780539775" y1="285.8749667080967" x2="420.4375110973011" y2="285.8749667080967" stroke="#e5e7eb" stroke-width="1"/>
+<text x="340.32811945134944" y="275.87500000000006" text-anchor="middle">Producto</text>
+<text x="287.2187167080966" y="305.37498335404837">id</text>
+<text x="287.2187167080966" y="328.37500000000006">nombre_producto</text>
+<text x="287.2187167080966" y="351.37498890269893">descripcion</text>
+<text x="287.2187167080966" y="374.3749778053978">precio</text>
+<text x="287.2187167080966" y="397.3749944513495">stock</text>
+<text x="287.2187167080966" y="420.37498335404837">imagen</text>
+<rect class="shape-entity" x="40" y="40" width="160" height="198.99996670809657" />
+<line x1="40" y1="69.00002219460232" x2="200" y2="69.00002219460232" stroke="#e5e7eb" stroke-width="1"/>
+<text x="120" y="59.00001387162647" text-anchor="middle">Cliente</text>
+<text x="74.09371670809662" y="88.50001109730114">id</text>
+<text x="74.09371670809662" y="111.50001387162646">nombre_cliente</text>
+<text x="74.09371670809662" y="134.50000277432528">apellidos</text>
+<text x="74.09371670809662" y="157.50001942027703">email</text>
+<text x="74.09371670809662" y="180.50000832297584">direccion</text>
+<text x="74.09371670809662" y="203.5000249689276">telefono</text>
+<rect class="shape-entity" x="260.92185280539775" y="41.57814719460231" width="160" height="130" />
+<line x1="260.92185280539775" y1="70.5781416459517" x2="420.92185280539775" y2="70.5781416459517" stroke="#e5e7eb" stroke-width="1"/>
+<text x="340.92185280539775" y="60.57813332297585" text-anchor="middle">Pedido</text>
+<text x="312.60939719460225" y="90.07814442027703">id</text>
+<text x="312.60939719460225" y="113.0781333229759">fecha</text>
+<text x="312.60939719460225" y="136.07813609730113">cliente_id</text>
+<rect class="shape-entity" x="477.5312943892045" y="117.53126664595175" width="160" height="153.0000166459517" />
+<line x1="477.5312943892045" y1="146.53126109730118" x2="637.5312943892045" y2="146.53126109730118" stroke="#e5e7eb" stroke-width="1"/>
+<text x="557.5312943892045" y="136.53126664595175" text-anchor="middle">LineasPedido</text>
+<text x="522.0000443892045" y="166.03126387162646">id</text>
+<text x="522.0000443892045" y="189.0312666459517">pedido_id</text>
+<text x="522.0000443892045" y="212.03126942027703">cantidad</text>
+<text x="522.0000443892045" y="235.03127219460225">producto_id</text>
+<path class="conn" d="M 292.6093639026989 130.03998348685934 L 185.89061390269887 86.53816370774297" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 501.9999556107954 234.599757702942 L 413.4375 297.8065255889615" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 501.9999556107954 181.001099823355 L 389.23439719460225 90.10829737124732" marker-end="url(#arrow-end)" />
+</svg>
